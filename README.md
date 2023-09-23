@@ -5,3 +5,20 @@ You can customize commonly used URLs or commands, and then use this plugin for q
 Then You can use the yaml path in the custom command file for multi device synchronization
 
 ![custom](./metadata/config.png)
+
+## config file example
+
+- tags：Extra identification during search
+- values：Various instructions in the current key
+- {clip_0}：The first data of the pasteboard
+
+```yaml
+- key: ss
+  remark: Search Engine
+  tags: sousuo,baidu,duoji
+  values:
+    - cmd: https://www.baidu.com/s?wd={clip_0}
+      remark: Baidu search
+    - cmd: https://www.google.com/search?q={clip_0}
+      remark: Google search
+```
