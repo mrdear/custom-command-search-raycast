@@ -6,6 +6,17 @@ Then You can use the yaml path in the custom command file for multi device synch
 
 ![custom](./metadata/config.png)
 
+## Install
+```shell
+git clone git@github.com:mrdear/custom-command-search-raycast.git
+
+cd custom-command-search-raycast
+
+npm install
+
+ray build
+```
+
 ## config file example
 
 - tags：Extra identification during search
